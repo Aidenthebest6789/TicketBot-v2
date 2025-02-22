@@ -27,9 +27,10 @@ module.exports = {
     once: true,
     execute(client) {
         const activities = [
-            { name: 'VALORANT', type: ActivityType.Playing },
-            { name: 'Netflix', type: ActivityType.Watching },
-            { name: 'Fortnite', type: ActivityType.Competing }
+            { name: 'Join Support discord.gg/invite/qAE9FaPTwu', type: ActivityType.Watching },
+            { name: 'Watching Servers', type: ActivityType.Playing },
+            { name: 'the best all in one', type: ActivityType.Streaming },
+            { name: 'slash commands', type: ActivityType.Listening },
         ];
 
         const statuses = ['idle', 'dnd'];
