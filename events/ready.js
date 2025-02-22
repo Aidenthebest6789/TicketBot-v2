@@ -28,8 +28,8 @@ module.exports = {
     execute(client) {
         const activities = [
             { name: 'Join Support discord.gg/invite/qAE9FaPTwu', type: ActivityType.Watching },
-            { name: 'Watching Servers', type: ActivityType.Playing },
-            { name: 'the best all in one', type: ActivityType.Streaming },
+            { name: 'Watching HexaBot support', type: ActivityType.Playing },
+            { name: 'DM me for support', type: ActivityType.Streaming },
             { name: 'slash commands', type: ActivityType.Listening },
         ];
 
