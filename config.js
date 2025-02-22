@@ -23,5 +23,5 @@
 module.exports = {
     token: '',
     guildId: '1341952032143315076',
-    mongodbURI: ' mongodb+srv://Modmail:Modmail@modmail.cnxpl.mongodb.net/?retryWrites=true&w=majority&appName=Modmail'
+    mongodbURI: 'mongodb+srv://Modmail:Modmail@modmail.cnxpl.mongodb.net/?retryWrites=true&w=majority&appName=Modmail'
 };
