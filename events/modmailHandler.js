@@ -87,7 +87,7 @@ module.exports = async (client) => {
         .setAuthor({
             name: "Mail Alert",
             iconURL: Icons.tick2Icon,
-            url: "https://discord.gg/xQF9f9yUEM"
+            url: "https://discord.gg/qAE9FaPTwu"
         })
         .setDescription(`Mail has been started. You can now chat with the staff.`)
         .setColor('Green')
@@ -134,7 +134,7 @@ module.exports = async (client) => {
                 .setAuthor({
                     name: "Mail Alert",
                     iconURL: Icons.tick2Icon,
-                    url: "https://discord.gg/xQF9f9yUEM"
+                    url: "https://discord.gg/qAE9FaPTwu"
                 })
                 .setDescription('Your Mail conversation has been closed by the staff. Thank you for reaching out.')
                 .setColor('Red')
