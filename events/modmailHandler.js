@@ -71,12 +71,12 @@ module.exports = async (client) => {
         
         const embed = new EmbedBuilder()
             .setTitle(`Mail from ${message.author.tag}`)
-            .setDescription(`User **${message.author}** has initiated a Mail conversation.`)
+            .setDescription(`User **${message.author}** has initiated a support ticket.`)
             .setColor('#FFFF00');
 
         const closeButton = new ButtonBuilder()
             .setCustomId('close_modmail')
-            .setLabel('Close Mail')
+            .setLabel('Close ticket')
             .setStyle(ButtonStyle.Danger);
 
         const row = new ActionRowBuilder().addComponents(closeButton);
@@ -89,9 +89,9 @@ module.exports = async (client) => {
             iconURL: Icons.tick2Icon,
             url: "https://discord.gg/xQF9f9yUEM"
         })
-        .setDescription(`Mail has been started. You can now chat with the staff.`)
+        .setDescription(`Modmail has been started. You can now chat with the staff.`)
         .setColor('Green')
-        .setFooter({ text: 'Ticket Bot V2!', iconURL: Icons.modIcon });
+        .setFooter({ text: 'HexaBot Modmail', iconURL: Icons.modIcon });
         message.author.send({ embeds: [Embed]});
     });
 
@@ -132,13 +132,13 @@ module.exports = async (client) => {
             if (user) {
                 const embed = new EmbedBuilder()
                 .setAuthor({
-                    name: "Mail Alert",
+                    name: "Modmail Alert",
                     iconURL: Icons.tick2Icon,
-                    url: "https://discord.gg/xQF9f9yUEM"
+                    url: "https://discord.gg/qAE9FaPTwu"
                 })
-                .setDescription('Your Mail conversation has been closed by the staff. Thank you for reaching out.')
+                .setDescription('Your Modmail Support has been closed by the staff. Thank you for reaching out.')
                 .setColor('Red')
-                .setFooter({ text: 'Ticket Bot V2!', iconURL: Icons.modIcon });
+                .setFooter({ text: 'HexaBot Modmail', iconURL: Icons.modIcon });
                 await user.send({ embeds: [embed]});
             }
 
